@@ -1,0 +1,59 @@
+<div class="container-fluid">
+    <div class="container">
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>Firstname</th>
+                    <th>Lastname</th>
+                    <th>Email</th>
+                </tr>
+            </thead>
+            <tbody>
+                <ng-container *ngIf="_emp.userId==1">
+                    <tr *ngFor="let key of Object.keys(_emp.firstId)">
+                        <td>{{_emp.firstId['first_name']}}</td>
+                        <td>{{_emp.firstId['last_name']}}</td>
+                        <td>{{_emp.firstId['email']}}</td>
+                    </tr>
+                </ng-container>
+                <ng-container *ngIf="_emp.userId==2">
+                    <tr *ngFor="let key of Object.keys(_emp.secondId)">
+                        <td>{{_emp.secondId['first_name']}}</td>
+                        <td>{{_emp.secondId['last_name']}}</td>
+                        <td>{{_emp.secondId['email']}}</td>
+                    </tr>
+                </ng-container>
+                <ng-container *ngIf="_emp.userId==3">
+                    <tr *ngFor="let key of Object.keys(_emp.thirdId)">
+                        <td>{{_emp.thirdId['first_name']}}</td>
+                        <td>{{_emp.thirdId['last_name']}}</td>
+                        <td>{{_emp.thirdId['email']}}</td>
+                    </tr>
+                </ng-container>
+                <ng-container *ngIf="_emp.userId==4">
+                    <tr *ngFor="let key of Object.keys(_emp.fourthId)">
+                        <td>{{_emp.fourthId['first_name']}}</td>
+                        <td>{{_emp.fourthId['last_name']}}</td>
+                        <td>{{_emp.fourthId['email']}}</td>
+                    </tr>
+                </ng-container>
+                <ng-container *ngIf="_emp.userId==5">
+                    <tr *ngFor="let key of Object.keys(_emp.fifthId)">
+                        <td>{{_emp.fifthId['first_name']}}</td>
+                        <td>{{_emp.fifthId['last_name']}}</td>
+                        <td>{{_emp.fifthId['email']}}</td>
+                    </tr>
+                </ng-container>
+                <ng-container *ngIf="_emp.userId==6">
+                    <tr *ngFor="let key of Object.keys(_emp.sixthId)">
+                        <td>{{_emp.sixthId['first_name']}}</td>
+                        <td>{{_emp.sixthId['last_name']}}</td>
+                        <td>{{_emp.sixthId['email']}}</td>
+                    </tr>
+                </ng-container>
+
+            </tbody>
+        </table>
+
+    </div>
+</div>
